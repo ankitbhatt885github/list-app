@@ -1,0 +1,146 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 370px;
+    height: 326px;
+}
+
+.hr-line {
+    height: 1px;
+    background-color: rgba(205, 205, 205, 1);
+    margin: 20px 0;
+    border: 2.7px;
+    width: 100%;
+}
+
+.drop-shadow {
+    box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12);
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px, 15px, 8px, 22px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px, 15px, 8px, 22px;
+}
+
+.checkbox-item label {
+    margin-right: 10px;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]::after {
+    /* tick mark  */
+    content: '\2713';
+    font-size: 16px;
+    opacity: 0.5;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:hover::after {
+    /* Tick mark */
+    content: '\2713';
+    font-size: 16px;
+    opacity: 0.5;
+    color: rgb(209, 209, 209);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Show tick mark when checkbox is checked */
+input[type="checkbox"]:checked::after {
+    color: white;
+    background-color: rgb(0, 85, 255);
+
+    height: 16px;
+    width: 17px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 4px;
+    border-radius: 3px;
+
+}
+
+
+
+
+
+.input-hover:hover {
+    content: '\2713';
+    font-size: 16px;
+    color: brown;
+    border: 1px solid rgb(165, 165, 165);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+    outline-offset: 0;
+}
+
+
+
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgba(255, 206, 34, 1);
+    color: rgba(31, 33, 40, 1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    bottom: 0;
+}
+
+button:hover {
+    background-color: rgba(255, 216, 77, 1);
+}
